@@ -21,39 +21,22 @@
       <h1>Taggrandizer!</h1>
       </div>
       <div>
-        <h4>Missing a tag you want? <a href="/admin.html">Admin</a></h4>
-        <h4>Want to review your handiwork? <a href="/allStyles.html">Review</a></h4>
+        <h4>Want to get back to work? <a href="/index.html">Home</a></h4>
       </div>
     </div>
 
 
-  <div class="col-md-4" id="add-tag">
-    <h3>Select Style(s)</h3>
-    <p>Paste with commas to edit multiple styles</p>
-    <form class="input-group">
-      <input type="text" class="form-control" placeholder="ABC1234..." ng-model="inputStyle">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="submit" ng-click="selectStyle()">Go</button>
-      </span>
-    </form><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-  <h3>Selected Styles: {{selectedStyles.length}}</h3>
-
     <table class="table table-responsive">
       <thead>
         <tr>
-          <th>Tag</th>
-          <th>Styles Applied</th>
-          <th>Apply</th>
-          <th>Remove</th>
+          <th>Style</th>
+          <th>Tags</th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="tag in tags">
-          <td>{{tag.tagName}}</td>
-          <td>{{selectedTagCount(tag)}}</td>
-          <td><button class="btn btn-success" ng-click="applyTag(tag)">Apply</button></td>
-          <td><button class="btn btn-warning" ng-click="removeTag(tag)">Remove</button></td>
+        <tr ng-repeat="style in styles">
+          <td>{{style.style}}</td>
+          <td>{{style.tags}}</td>
         </tr>
      </tbody>
    </table>

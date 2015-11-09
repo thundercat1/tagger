@@ -1,5 +1,5 @@
 {
-  "firebase": "tagalicious",
+  "firebase": "taggrandizer",
   "public": "public",
   "ignore": [
     "firebase.json",

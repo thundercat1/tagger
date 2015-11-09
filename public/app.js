@@ -1,6 +1,6 @@
 var app = angular.module("app", ["firebase"]);
 app.controller("AppCtrl", function($scope, $firebaseArray, $firebaseAuth) {
-  var ref = new Firebase("https://tagalicious.firebaseio.com");
+  var ref = new Firebase("https://taggrandizer.firebaseio.com");
   $scope.tags = $firebaseArray(ref.child('tags'));
   $scope.styles = $firebaseArray(ref.child('styles'));
 
