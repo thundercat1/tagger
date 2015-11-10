@@ -5,7 +5,9 @@ app.controller("AppCtrl", function($scope, $firebaseArray, $firebaseAuth) {
   $scope.styles = $firebaseArray(ref.child('styles'));
 
   var getStylesFromString = function(str){
-    var arr = str.split(',');
+    console.log(str);
+    var arr = str.split('\n');
+    console.log(arr);
     var trimmedArray = [];
 
     arr.forEach(function(item){

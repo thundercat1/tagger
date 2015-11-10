@@ -18,7 +18,7 @@
   <div class="container">
     <div class="jumbotron">
       <div class="title">
-      <h1>Taggrandizer!</h1>
+      <h1>Taggrandizer</h1>
       </div>
       <div>
         <h4>Missing a tag you want? <a href="/admin.html">Admin</a></h4>
@@ -31,10 +31,10 @@
     <h3>Select Style(s)</h3>
     <p>Paste with commas to edit multiple styles</p>
     <form class="input-group">
-      <input type="text" class="form-control" placeholder="ABC1234..." ng-model="inputStyle">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="submit" ng-click="selectStyle()">Go</button>
-      </span>
+      <textarea type="text" class="form-control" placeholder="ABC1234..." ng-model="inputStyle" rows=5></textarea>
+
+      <button class="btn btn-success pull-right headspace" type="submit" ng-click="selectStyle()">Load</button>
+
     </form><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
   <h3>Selected Styles: {{selectedStyles.length}}</h3>
